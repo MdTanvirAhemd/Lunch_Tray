@@ -21,9 +21,9 @@ import java.text.NumberFormat
  * Data class for menu items
  */
 data class MenuItem(
-    var name: String,
+    val name: String,
     val description: String,
-    var price: Double,
+    val price: Double,
     val type: Int
 ) {
     /**

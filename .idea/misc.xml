@@ -3,9 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/my_application/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/activity_main.xml" value="0.23958333333333334" />
+        <entry key="..\:/my_application/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/my_application/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_accompaniment_menu.xml" value="0.23958333333333334" />
-        <entry key="..\:/my_application/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_checkout.xml" value="0.23958333333333334" />
+        <entry key="..\:/my_application/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_checkout.xml" value="0.1" />
         <entry key="..\:/my_application/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_entree_menu.xml" value="0.1" />
         <entry key="..\:/my_application/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_side_menu.xml" value="0.1" />
         <entry key="..\:/my_application/android-basics-kotlin-lunch-tray-app-main/app/src/main/res/layout/fragment_start_order.xml" value="0.23958333333333334" />

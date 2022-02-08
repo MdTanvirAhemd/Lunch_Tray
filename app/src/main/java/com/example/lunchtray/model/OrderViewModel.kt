@@ -70,7 +70,7 @@ abstract class OrderViewModel : ViewModel() {
     /**
      * Set the entree for the order.
      */
-    var currentSubltotalvalue: Double = _subtotal.value!!.toDouble()
+
     fun setEntree(entree: String) {
         // TODO: if _entree.value is not null, set the previous entree price to the current
         //  entree price.
@@ -82,7 +82,8 @@ abstract class OrderViewModel : ViewModel() {
         // TODO: if _subtotal.value is not null subtract the previous entree price from the current
         //  subtotal value. This ensures that we only charge for the currently selected entree.
         if (_subtotal.value != null) {
-            currentSubltotalvalue -= previousEntreePrice
+            _subtotal.value =  _subtotal.value!! - previousEntreePrice
+
         }
 
         // TODO: set the current entree value to the menu item corresponding to the passed in string
@@ -104,7 +105,8 @@ abstract class OrderViewModel : ViewModel() {
         // TODO: if _subtotal.value is not null subtract the previous side price from the current
         //  subtotal value. This ensures that we only charge for the currently selected side.
         if (_subtotal.value != null) {
-            currentSubltotalvalue -= previousSidePrice
+            _subtotal.value =  _subtotal.value!! - previousSidePrice
+
         }
 
         // TODO: set the current side value to the menu item corresponding to the passed in string
@@ -126,7 +128,8 @@ abstract class OrderViewModel : ViewModel() {
         //  the current subtotal value. This ensures that we only charge for the currently selected
         //  accompaniment.
         if (_accompaniment.value != null) {
-            currentSubltotalvalue -= previousAccompanimentPrice
+            _subtotal.value =  _subtotal.value!! - previousAccompanimentPrice
+
         }
 
         // TODO: set the current accompaniment value to the menu item corresponding to the passed in
@@ -145,7 +148,7 @@ abstract class OrderViewModel : ViewModel() {
         //  added item.
         //  Otherwise, set _subtotal.value to equal the price of the item.
         if (_subtotal.value != null) {
-            _subtotal.value = itemPrice
+            _subtotal.value = _subtotal.value!! + itemPrice
         }else{
             _subtotal.value = _entree.value?.price
         }
@@ -179,6 +182,6 @@ abstract class OrderViewModel : ViewModel() {
         previousAccompanimentPrice = 0.0
     }
     init {
-        Log.i("Stringswpiretju", "${_entree.value}_entree.value")
+       // Log.i("Stringswpiretju", "${_entree.value}_entree.value")
     }
 }
